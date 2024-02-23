@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: none;
+}
+body {
+    background-color: #ccc;
+    text-align: center;
+}
+.container {
+    width: 800px;
+    margin: 10px auto;
+    border: 5px solid #fff;
+    overflow: auto;
+}
+.img-large img {
+    width: 100%;
+    height: 400px;
+}
+.thumbs img {
+    width: 266px;
+    float: left;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+.thumbs img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* animasi */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.active {
+    opacity: 0.5;
+}
